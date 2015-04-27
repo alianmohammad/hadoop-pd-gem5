@@ -1,0 +1,165 @@
+2015-04-27 07:51:36,919 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = clara-18/192.168.2.18
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.3-SNAPSHOT
+STARTUP_MSG:   build =  -r ; compiled by 'alian-admin' on Sun Apr 26 20:12:07 CDT 2015
+************************************************************/
+2015-04-27 07:51:37,089 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-04-27 07:51:37,101 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-04-27 07:51:37,102 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-04-27 07:51:37,102 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2015-04-27 07:51:37,371 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-04-27 07:51:37,377 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-04-27 07:51:37,383 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-04-27 07:51:37,385 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2015-04-27 07:51:37,407 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-04-27 07:51:37,407 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 17.77875 MB
+2015-04-27 07:51:37,407 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-04-27 07:51:37,407 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-04-27 07:51:37,425 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=alian-admin
+2015-04-27 07:51:37,426 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-04-27 07:51:37,426 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-04-27 07:51:37,429 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-04-27 07:51:37,429 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-04-27 07:51:37,693 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2015-04-27 07:51:37,706 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-04-27 07:51:37,714 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 1
+2015-04-27 07:51:37,718 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2015-04-27 07:51:37,718 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 117 loaded in 0 seconds.
+2015-04-27 07:51:37,718 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /users/alian-admin/temps/tmp1/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2015-04-27 07:51:37,719 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 117 saved in 0 seconds.
+2015-04-27 07:51:37,942 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 117 saved in 0 seconds.
+2015-04-27 07:51:38,152 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2015-04-27 07:51:38,152 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 734 msecs
+2015-04-27 07:51:38,166 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 0
+2015-04-27 07:51:38,166 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2015-04-27 07:51:38,166 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 0
+2015-04-27 07:51:38,166 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2015-04-27 07:51:38,166 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 12 msec
+2015-04-27 07:51:38,166 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 0 secs.
+2015-04-27 07:51:38,166 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 0 racks and 0 datanodes
+2015-04-27 07:51:38,167 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 0 blocks
+2015-04-27 07:51:38,171 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2015-04-27 07:51:38,172 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 1 msec
+2015-04-27 07:51:38,172 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 1 msec processing time, 1 msec clock time, 1 cycles
+2015-04-27 07:51:38,172 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2015-04-27 07:51:38,172 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2015-04-27 07:51:38,178 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source FSNamesystemMetrics registered.
+2015-04-27 07:51:38,198 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-04-27 07:51:38,200 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort54310 registered.
+2015-04-27 07:51:38,200 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort54310 registered.
+2015-04-27 07:51:38,206 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: clara-18/192.168.2.18:54310
+2015-04-27 07:51:38,262 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-27 07:51:38,311 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-04-27 07:51:38,319 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2015-04-27 07:51:38,325 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2015-04-27 07:51:38,325 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2015-04-27 07:51:38,325 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2015-04-27 07:51:38,326 INFO org.mortbay.log: jetty-6.1.26
+2015-04-27 07:51:38,653 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2015-04-27 07:51:38,653 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2015-04-27 07:51:38,676 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-04-27 07:51:38,676 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 54310: starting
+2015-04-27 07:51:38,676 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 54310: starting
+2015-04-27 07:51:38,677 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 54310: starting
+2015-04-27 07:51:38,677 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 54310: starting
+2015-04-27 07:51:38,677 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 54310: starting
+2015-04-27 07:51:38,677 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 54310: starting
+2015-04-27 07:51:38,678 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 54310: starting
+2015-04-27 07:51:38,678 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 54310: starting
+2015-04-27 07:51:38,678 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 54310: starting
+2015-04-27 07:51:38,678 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 54310: starting
+2015-04-27 07:51:38,678 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 54310: starting
+2015-04-27 07:51:40,034 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 192.168.2.13:50010 storage DS-1530650878-192.168.2.13-50010-1430139167127
+2015-04-27 07:51:40,036 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.2.13:50010
+2015-04-27 07:51:40,068 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 192.168.2.15:50010 storage DS-1119646739-192.168.2.15-50010-1430139167415
+2015-04-27 07:51:40,068 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.2.15:50010
+2015-04-27 07:51:40,084 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 192.168.2.14:50010 storage DS-1205818477-192.168.2.14-50010-1430139131012
+2015-04-27 07:51:40,085 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.2.14:50010
+2015-04-27 07:51:40,100 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameSystem.processReport: from 192.168.2.13:50010, blocks: 0, processing time: 0 msecs
+2015-04-27 07:51:40,123 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameSystem.processReport: from 192.168.2.15:50010, blocks: 0, processing time: 0 msecs
+2015-04-27 07:51:40,137 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 192.168.2.12:50010 storage DS-813528742-192.168.2.12-50010-1430139125800
+2015-04-27 07:51:40,137 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.2.12:50010
+2015-04-27 07:51:40,145 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameSystem.processReport: from 192.168.2.14:50010, blocks: 0, processing time: 0 msecs
+2015-04-27 07:51:40,212 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameSystem.processReport: from 192.168.2.12:50010, blocks: 0, processing time: 0 msecs
+2015-04-27 07:52:12,275 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /users/alian-admin/temps/tmp0/mapred/system/jobtracker.info. blk_6376259194214459529_1001
+2015-04-27 07:52:12,357 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.13:50010 is added to blk_6376259194214459529_1001 size 4
+2015-04-27 07:52:12,359 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /users/alian-admin/temps/tmp0/mapred/system/jobtracker.info from client DFSClient_2119075869
+2015-04-27 07:52:12,360 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /users/alian-admin/temps/tmp0/mapred/system/jobtracker.info is closed by DFSClient_2119075869
+2015-04-27 07:52:31,613 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.jar. blk_608922012027632925_1002
+2015-04-27 07:52:31,722 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.15:50010 is added to blk_608922012027632925_1002 size 142465
+2015-04-27 07:52:31,725 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.jar from client DFSClient_-1254712659
+2015-04-27 07:52:31,726 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.jar is closed by DFSClient_-1254712659
+2015-04-27 07:52:31,740 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Increasing replication for file /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.jar. New replication is 10
+2015-04-27 07:52:31,811 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Increasing replication for file /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.split. New replication is 10
+2015-04-27 07:52:31,827 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.split. blk_1227219164226645488_1003
+2015-04-27 07:52:31,988 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.13:50010 is added to blk_1227219164226645488_1003 size 475
+2015-04-27 07:52:31,989 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.12:50010 is added to blk_1227219164226645488_1003 size 475
+2015-04-27 07:52:31,994 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.15:50010 is added to blk_1227219164226645488_1003 size 475
+2015-04-27 07:52:31,997 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.14:50010 is added to blk_1227219164226645488_1003 size 475
+2015-04-27 07:52:32,002 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.split from client DFSClient_-1254712659
+2015-04-27 07:52:32,003 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.split is closed by DFSClient_-1254712659
+2015-04-27 07:52:32,040 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.splitmetainfo. blk_-8973925121976150940_1004
+2015-04-27 07:52:32,054 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.14:50010 is added to blk_-8973925121976150940_1004 size 25
+2015-04-27 07:52:32,056 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.splitmetainfo from client DFSClient_-1254712659
+2015-04-27 07:52:32,057 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.splitmetainfo is closed by DFSClient_-1254712659
+2015-04-27 07:52:32,173 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.xml. blk_-5269661652392374955_1005
+2015-04-27 07:52:32,178 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 192.168.2.15:50010 to replicate blk_608922012027632925_1002 to datanode(s) 192.168.2.13:50010 192.168.2.12:50010 192.168.2.14:50010
+2015-04-27 07:52:32,186 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.15:50010 is added to blk_-5269661652392374955_1005 size 20595
+2015-04-27 07:52:32,187 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.xml from client DFSClient_-1254712659
+2015-04-27 07:52:32,187 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /users/alian-admin/temps/tmp0/mapred/staging/alian-admin/.staging/job_201504270752_0001/job.xml is closed by DFSClient_-1254712659
+2015-04-27 07:52:32,518 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /cloudrank-data/rtw-base-120M/_logs/history/job_201504270752_0001_conf.xml. blk_-312687797012885715_1007
+2015-04-27 07:52:32,533 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.12:50010 is added to blk_-312687797012885715_1007 size 20665
+2015-04-27 07:52:32,535 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /cloudrank-data/rtw-base-120M/_logs/history/job_201504270752_0001_conf.xml from client DFSClient_-618051112
+2015-04-27 07:52:32,536 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /cloudrank-data/rtw-base-120M/_logs/history/job_201504270752_0001_conf.xml is closed by DFSClient_-618051112
+2015-04-27 07:52:32,576 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /users/alian-admin/temps/tmp0/mapred/system/job_201504270752_0001/jobToken. blk_3784765719640339277_1008
+2015-04-27 07:52:32,588 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.13:50010 is added to blk_3784765719640339277_1008 size 106
+2015-04-27 07:52:32,591 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /users/alian-admin/temps/tmp0/mapred/system/job_201504270752_0001/jobToken from client DFSClient_2119075869
+2015-04-27 07:52:32,592 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /users/alian-admin/temps/tmp0/mapred/system/job_201504270752_0001/jobToken is closed by DFSClient_2119075869
+2015-04-27 07:52:34,159 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.13:50010 is added to blk_608922012027632925_1002 size 142465
+2015-04-27 07:52:34,166 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.12:50010 is added to blk_608922012027632925_1002 size 142465
+2015-04-27 07:52:34,170 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.14:50010 is added to blk_608922012027632925_1002 size 142465
+2015-04-27 07:52:42,217 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 49 Total time for transactions(ms): 3Number of transactions batched in Syncs: 0 Number of syncs: 29 SyncTimes(ms): 302 
+2015-04-27 07:52:42,299 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /cloudrank-data/rtw-base-120M/_temporary/_attempt_201504270752_0001_m_000000_0/part-00000. blk_5718727981303487557_1009
+2015-04-27 07:52:42,789 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /cloudrank-data/rtw-base-120M/_temporary/_attempt_201504270752_0001_m_000001_0/part-00001. blk_-8804106547514080133_1010
+2015-04-27 07:52:43,392 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.15:50010 is added to blk_5718727981303487557_1009 size 32034661
+2015-04-27 07:52:43,394 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /cloudrank-data/rtw-base-120M/_temporary/_attempt_201504270752_0001_m_000000_0/part-00000 from client DFSClient_attempt_201504270752_0001_m_000000_0
+2015-04-27 07:52:43,394 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /cloudrank-data/rtw-base-120M/_temporary/_attempt_201504270752_0001_m_000000_0/part-00000 is closed by DFSClient_attempt_201504270752_0001_m_000000_0
+2015-04-27 07:52:43,901 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.12:50010 is added to blk_-8804106547514080133_1010 size 32033301
+2015-04-27 07:52:43,902 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /cloudrank-data/rtw-base-120M/_temporary/_attempt_201504270752_0001_m_000001_0/part-00001 from client DFSClient_attempt_201504270752_0001_m_000001_0
+2015-04-27 07:52:43,903 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /cloudrank-data/rtw-base-120M/_temporary/_attempt_201504270752_0001_m_000001_0/part-00001 is closed by DFSClient_attempt_201504270752_0001_m_000001_0
+2015-04-27 07:52:45,730 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /cloudrank-data/rtw-base-120M/_temporary/_attempt_201504270752_0001_m_000002_0/part-00002. blk_-1864011203205149396_1012
+2015-04-27 07:52:45,749 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /cloudrank-data/rtw-base-120M/_temporary/_attempt_201504270752_0001_m_000003_0/part-00003. blk_-6232601170698638355_1012
+2015-04-27 07:52:46,908 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.13:50010 is added to blk_-1864011203205149396_1012 size 32034343
+2015-04-27 07:52:46,910 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /cloudrank-data/rtw-base-120M/_temporary/_attempt_201504270752_0001_m_000002_0/part-00002 from client DFSClient_attempt_201504270752_0001_m_000002_0
+2015-04-27 07:52:46,911 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /cloudrank-data/rtw-base-120M/_temporary/_attempt_201504270752_0001_m_000002_0/part-00002 is closed by DFSClient_attempt_201504270752_0001_m_000002_0
+2015-04-27 07:52:46,912 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.14:50010 is added to blk_-6232601170698638355_1012 size 32035762
+2015-04-27 07:52:46,913 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /cloudrank-data/rtw-base-120M/_temporary/_attempt_201504270752_0001_m_000003_0/part-00003 from client DFSClient_attempt_201504270752_0001_m_000003_0
+2015-04-27 07:52:46,914 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /cloudrank-data/rtw-base-120M/_temporary/_attempt_201504270752_0001_m_000003_0/part-00003 is closed by DFSClient_attempt_201504270752_0001_m_000003_0
+2015-04-27 07:52:54,292 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /cloudrank-data/rtw-base-120M/_SUCCESS from client DFSClient_attempt_201504270752_0001_m_000004_0
+2015-04-27 07:52:54,293 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /cloudrank-data/rtw-base-120M/_SUCCESS is closed by DFSClient_attempt_201504270752_0001_m_000004_0
+2015-04-27 07:52:54,309 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_608922012027632925 is added to invalidSet of 192.168.2.15:50010
+2015-04-27 07:52:54,309 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_608922012027632925 is added to invalidSet of 192.168.2.13:50010
+2015-04-27 07:52:54,309 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_608922012027632925 is added to invalidSet of 192.168.2.12:50010
+2015-04-27 07:52:54,309 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_608922012027632925 is added to invalidSet of 192.168.2.14:50010
+2015-04-27 07:52:54,309 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_1227219164226645488 is added to invalidSet of 192.168.2.13:50010
+2015-04-27 07:52:54,309 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_1227219164226645488 is added to invalidSet of 192.168.2.12:50010
+2015-04-27 07:52:54,310 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_1227219164226645488 is added to invalidSet of 192.168.2.15:50010
+2015-04-27 07:52:54,310 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_1227219164226645488 is added to invalidSet of 192.168.2.14:50010
+2015-04-27 07:52:54,310 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_-8973925121976150940 is added to invalidSet of 192.168.2.14:50010
+2015-04-27 07:52:54,310 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_-5269661652392374955 is added to invalidSet of 192.168.2.15:50010
+2015-04-27 07:52:56,185 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 192.168.2.15:50010 to delete  blk_1227219164226645488_1003 blk_-5269661652392374955_1005 blk_608922012027632925_1002
+2015-04-27 07:52:56,186 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 192.168.2.12:50010 to delete  blk_1227219164226645488_1003 blk_608922012027632925_1002
+2015-04-27 07:52:58,784 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /cloudrank-data/rtw-base-120M/_logs/history/job_201504270752_0001_1430139152212_alian-admin_random-text-writer. blk_4565258226543371544_1013
+2015-04-27 07:52:58,797 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.2.15:50010 is added to blk_4565258226543371544_1013 size 19161
+2015-04-27 07:52:58,800 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /cloudrank-data/rtw-base-120M/_logs/history/job_201504270752_0001_1430139152212_alian-admin_random-text-writer from client DFSClient_-618051112
+2015-04-27 07:52:58,801 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /cloudrank-data/rtw-base-120M/_logs/history/job_201504270752_0001_1430139152212_alian-admin_random-text-writer is closed by DFSClient_-618051112
+2015-04-27 07:52:58,833 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_3784765719640339277 is added to invalidSet of 192.168.2.13:50010
+2015-04-27 07:52:59,186 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 192.168.2.14:50010 to delete  blk_1227219164226645488_1003 blk_-8973925121976150940_1004 blk_608922012027632925_1002
+2015-04-27 07:52:59,187 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 192.168.2.13:50010 to delete  blk_3784765719640339277_1008 blk_1227219164226645488_1003 blk_608922012027632925_1002
+2015-04-27 07:56:40,951 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 192.168.2.18
+2015-04-27 07:56:40,952 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 79 Total time for transactions(ms): 4Number of transactions batched in Syncs: 4 Number of syncs: 55 SyncTimes(ms): 582 
+2015-04-27 07:56:42,284 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 192.168.2.18
+2015-04-27 07:56:42,284 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 46 

@@ -1,0 +1,41 @@
+2015-04-27 07:51:39,916 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = clara-18/192.168.2.18
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.3-SNAPSHOT
+STARTUP_MSG:   build =  -r ; compiled by 'alian-admin' on Sun Apr 26 20:12:07 CDT 2015
+************************************************************/
+2015-04-27 07:51:40,507 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Starting web server as: alian-admin
+2015-04-27 07:51:40,566 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-27 07:51:40,622 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-04-27 07:51:40,624 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2015-04-27 07:51:40,625 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2015-04-27 07:51:40,625 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2015-04-27 07:51:40,625 INFO org.mortbay.log: jetty-6.1.26
+2015-04-27 07:51:40,944 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2015-04-27 07:51:40,944 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2015-04-27 07:51:40,944 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2015-04-27 07:51:40,944 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary image servlet up at: 0.0.0.0:50090
+2015-04-27 07:51:40,944 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2015-04-27 07:51:40,944 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2015-04-27 07:56:41,208 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 117 bytes.
+2015-04-27 07:56:41,212 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 9311 bytes.
+2015-04-27 07:56:41,218 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-04-27 07:56:41,218 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 17.77875 MB
+2015-04-27 07:56:41,218 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-04-27 07:56:41,218 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-04-27 07:56:41,233 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=alian-admin
+2015-04-27 07:56:41,233 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-04-27 07:56:41,233 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-04-27 07:56:41,237 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-04-27 07:56:41,237 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-04-27 07:56:41,243 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-04-27 07:56:41,489 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 1
+2015-04-27 07:56:41,489 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2015-04-27 07:56:41,528 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /users/alian-admin/temps/tmp0/dfs/namesecondary/current/edits of size 9311 edits # 79 loaded in 0 seconds.
+2015-04-27 07:56:41,529 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2015-04-27 07:56:41,586 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 2574 saved in 0 seconds.
+2015-04-27 07:56:41,996 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 2574 saved in 0 seconds.
+2015-04-27 07:56:42,213 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=0.0.0.0&token=-32:33400264:0:1430139400000:1430139097718
+2015-04-27 07:56:42,463 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 2574
