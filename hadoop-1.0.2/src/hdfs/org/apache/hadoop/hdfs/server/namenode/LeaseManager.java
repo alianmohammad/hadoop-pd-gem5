@@ -365,7 +365,7 @@ public class LeaseManager {
         }
 
         try {
-          Thread.sleep(2000);
+          Thread.sleep(200); //m.alian
         } catch(InterruptedException ie) {
           if (LOG.isDebugEnabled()) {
             LOG.debug(name + " is interrupted", ie);

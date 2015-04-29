@@ -344,7 +344,8 @@ class MapTask extends Task {
   public void run(final JobConf job, final TaskUmbilicalProtocol umbilical) 
     throws IOException, ClassNotFoundException, InterruptedException {
     this.umbilical = umbilical;
-
+    //long millis = System.currentTimeMillis(); //m.alian_print
+    //System.out.println("map task started=" + millis);    
     // start thread that will handle communication with parent
     TaskReporter reporter = new TaskReporter(getProgress(), umbilical,
         jvmContext);
@@ -371,6 +372,8 @@ class MapTask extends Task {
     } else {
       runOldMapper(job, splitMetaInfo, umbilical, reporter);
     }
+    //millis = System.currentTimeMillis(); //m.alian_print
+    //System.out.println("map task done=" + millis);  
     done(umbilical, reporter);
   }
   @SuppressWarnings("unchecked")

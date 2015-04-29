@@ -3394,12 +3394,25 @@ public class JobTracker implements MRConstants, InterTrackerProtocol,
         LOG.warn("Unknown task tracker polling; ignoring: " + trackerName);
       } else {
         List<Task> tasks = getSetupAndCleanupTasks(taskTrackerStatus);
+        /*if (tasks!=null ){ //m.alian_print
+           long millis = System.currentTimeMillis();
+           System.out.println("setup-cleanup task=" + millis);
+        }*/
+
         if (tasks == null ) {
           tasks = taskScheduler.assignTasks(taskTrackers.get(trackerName));
+          /*if (tasks!=null){  //m.alian_print
+             long millis = System.currentTimeMillis(); //m.alian
+             System.out.println("mapreduce task=" + millis);
+          }*/
         }
         if (tasks != null) {
           for (Task task : tasks) {
             expireLaunchingTasks.addNewTask(task.getTaskID());
+            /*if (tasks!=null){   //m.alian_print
+              long millis = System.currentTimeMillis(); //m.alian
+              System.out.println("submitted tasks=" + millis);
+            }*/
             if(LOG.isDebugEnabled()) {
               LOG.debug(trackerName + " -> LaunchTask: " + task.getTaskID());
             }
@@ -3460,6 +3473,8 @@ public class JobTracker implements MRConstants, InterTrackerProtocol,
                                       Math.ceil((double)clusterSize / 
                                                 NUM_HEARTBEATS_IN_SECOND)),
                                 HEARTBEAT_INTERVAL_MIN) ;
+    heartbeatInterval = 100; //m.alian
+    //System.out.println("heartbeatInterval="+heartbeatInterval +" " +HEARTBEAT_INTERVAL_MIN); //m.alian_print
     return heartbeatInterval;
   }
 
@@ -3555,7 +3570,6 @@ public class JobTracker implements MRConstants, InterTrackerProtocol,
       
       taskTracker.setStatus(status);
       taskTrackers.put(trackerName, taskTracker);
-      
       if (LOG.isDebugEnabled()) {
         int runningMaps = 0, runningReduces = 0;
         int commitPendingMaps = 0, commitPendingReduces = 0;
@@ -3588,9 +3602,19 @@ public class JobTracker implements MRConstants, InterTrackerProtocol,
                   " running(r) = " + runningReduces + 
                   " unassigned(r) = " + unassignedReduces + 
                   " commit_pending(r) = " + commitPendingReduces +
-                  " misc(r) = " + miscReduces); 
+                  " misc(r) = " + miscReduces);
+        long millis = System.currentTimeMillis();
+        /*System.out.println("tt_statuse :"+ millis+" "+trackerName + ": Status -" +   //m.alian_print comment out the if condition to print this option on every heartbeat
+                  " running(m) = " + runningMaps +
+                  " unassigned(m) = " + unassignedMaps +
+                  " commit_pending(m) = " + commitPendingMaps +
+                  " misc(m) = " + miscMaps +
+                  " running(r) = " + runningReduces +
+                  " unassigned(r) = " + unassignedReduces +
+                  " commit_pending(r) = " + commitPendingReduces +
+                  " misc(r) = " + miscReduces);*/
+ 
       }
-
       if (!alreadyPresent)  {
         Integer numTaskTrackersInHost = 
           uniqueHostsMap.get(status.getHost());

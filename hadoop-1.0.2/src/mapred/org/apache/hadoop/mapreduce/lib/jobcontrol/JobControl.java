@@ -207,7 +207,7 @@ public class JobControl implements Runnable {
       while (true) {
         while (this.runnerState == ThreadState.SUSPENDED) {
           try {
-            Thread.sleep(5000);
+            Thread.sleep(100);  //m.alian default=5000
           }
           catch (Exception e) {
             //TODO the thread was interrupted, do something!!!
@@ -245,7 +245,7 @@ public class JobControl implements Runnable {
           break;
         }
         try {
-          Thread.sleep(5000);
+          Thread.sleep(100);  //m.alian default=5000
         }
         catch (Exception e) {
           //TODO the thread was interrupted, do something!!!

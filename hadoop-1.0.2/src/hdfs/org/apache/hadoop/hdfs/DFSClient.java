@@ -2273,7 +2273,7 @@ public class DFSClient implements FSConstants, java.io.Closeable {
               + " from any node: " + ie
               + ". Will get new block locations from namenode and retry...");
           try {
-            Thread.sleep(3000);
+            Thread.sleep(100); //m.alian defaul(3000)
           } catch (InterruptedException iex) {
           }
           deadNodes.clear(); //2nd option is to remove only nodes[blockId]

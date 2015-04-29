@@ -180,7 +180,7 @@ class Child {
             if (++idleLoopCount >= SLEEP_LONGER_COUNT) {
               //we sleep for a bigger interval when we don't receive
               //tasks for a while
-              Thread.sleep(1500);
+              Thread.sleep(500); //m.alian default was 1500
             } else {
               Thread.sleep(500);
             }

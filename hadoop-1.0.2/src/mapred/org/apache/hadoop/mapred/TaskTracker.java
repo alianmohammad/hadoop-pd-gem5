@@ -2511,7 +2511,7 @@ public class TaskTracker implements MRConstants, TaskUmbilicalProtocol,
                 LOG.info("Lost connection to JobTracker [" +
                          jobTrackAddr + "].  Retrying...", ex);
                 try {
-                  Thread.sleep(5000);
+                  Thread.sleep(100); // m.alian default 5000
                 } catch (InterruptedException ie) {
                 }
               }
@@ -2863,7 +2863,7 @@ public class TaskTracker implements MRConstants, TaskUmbilicalProtocol,
       //
       while (!done && (System.currentTimeMillis() - start < WAIT_FOR_DONE)) {
         try {
-          Thread.sleep(1000);
+          Thread.sleep(50);   //m.alian defaul 1000
         } catch (InterruptedException ie) {
         }
       }

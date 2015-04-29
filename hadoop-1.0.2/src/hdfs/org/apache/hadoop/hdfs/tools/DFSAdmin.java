@@ -366,7 +366,7 @@ public class DFSAdmin extends FsShell {
     if (waitExitSafe) {
       while (inSafeMode) {
         try {
-          Thread.sleep(5000);
+          Thread.sleep(100); //m.alian
         } catch (java.lang.InterruptedException e) {
           throw new IOException("Wait Interrupted");
         }

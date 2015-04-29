@@ -268,7 +268,7 @@ public class JobControl implements Runnable{
     while (true) {
       while (this.runnerState == JobControl.SUSPENDED) {
         try {
-          Thread.sleep(5000);
+          Thread.sleep(100); //m.alian
         }
         catch (Exception e) {
 					
@@ -282,7 +282,7 @@ public class JobControl implements Runnable{
         break;
       }
       try {
-        Thread.sleep(5000);
+        Thread.sleep(100); //m.alian
       }
       catch (Exception e) {
 				

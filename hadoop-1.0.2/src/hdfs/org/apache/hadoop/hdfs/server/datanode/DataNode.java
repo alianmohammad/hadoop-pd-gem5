@@ -393,8 +393,8 @@ public class DataNode extends Configured
     this.registerMXBean(conf); // register the MXBean for DataNode
     
     // Allow configuration to delay block reports to find bugs
-    artificialBlockReceivedDelay = conf.getInt(
-        "dfs.datanode.artificialBlockReceivedDelay", 0);
+    artificialBlockReceivedDelay = 0;//conf.getInt(  //m.alian
+        //"dfs.datanode.artificialBlockReceivedDelay", 0);
 
     // find free port or use privileged port provide
     ServerSocket ss;
@@ -427,7 +427,7 @@ public class DataNode extends Configured
       LOG.info("dfs.blockreport.initialDelay is greater than " +
         "dfs.blockreport.intervalMsec." + " Setting initial delay to 0 msec:");
     }
-    this.heartBeatInterval = conf.getLong("dfs.heartbeat.interval", HEARTBEAT_INTERVAL) * 1000L;
+    this.heartBeatInterval = conf.getLong("dfs.heartbeat.interval", HEARTBEAT_INTERVAL) * 100L; //m.alian
     DataNode.nameNodeAddr = nameNodeAddr;
 
     //initialize periodic block scanner
@@ -551,7 +551,7 @@ public class DataNode extends Configured
       } catch(SocketTimeoutException e) {  // namenode is busy
         LOG.info("Problem connecting to server: " + getNameNodeAddr());
         try {
-          Thread.sleep(1000);
+          Thread.sleep(100); //m.alian
         } catch (InterruptedException ie) {}
       }
     }
@@ -675,7 +675,7 @@ public class DataNode extends Configured
       } catch(SocketTimeoutException e) {  // namenode is busy
         LOG.info("Problem connecting to server: " + getNameNodeAddr());
         try {
-          Thread.sleep(1000);
+          Thread.sleep(100); //m.alian
         } catch (InterruptedException ie) {}
       }
     }
@@ -760,7 +760,7 @@ public class DataNode extends Configured
             break;
           }
           try {
-            Thread.sleep(1000);
+            Thread.sleep(100); //m.alian
           } catch (InterruptedException e) {}
         }
       }
@@ -1460,7 +1460,7 @@ public class DataNode extends Configured
         LOG.error("Exception: " + StringUtils.stringifyException(ex));
         if (shouldRun) {
           try {
-            Thread.sleep(5000);
+            Thread.sleep(100);  //m.alian
           } catch (InterruptedException ie) {
           }
         }

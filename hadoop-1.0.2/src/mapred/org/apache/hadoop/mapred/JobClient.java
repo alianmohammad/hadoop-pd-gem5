@@ -333,7 +333,7 @@ public class JobClient extends Configured implements MRConstants, Tool  {
     public void waitForCompletion() throws IOException {
       while (!isComplete()) {
         try {
-          Thread.sleep(5000);
+          Thread.sleep(500);  //m.alian
         } catch (InterruptedException ie) {
         }
       }
