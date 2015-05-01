@@ -6,7 +6,7 @@
 # remote nodes.
 
 # The java implementation to use.  Required.
-export JAVA_HOME=/users/alian-admin/jdk1.6.0_45
+export JAVA_HOME=/root/jdk1.7.0_60
 
 # Extra Java CLASSPATH elements.  Optional.
 # export HADOOP_CLASSPATH=
