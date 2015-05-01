@@ -3394,10 +3394,21 @@ public class JobTracker implements MRConstants, InterTrackerProtocol,
         LOG.warn("Unknown task tracker polling; ignoring: " + trackerName);
       } else {
         List<Task> tasks = getSetupAndCleanupTasks(taskTrackerStatus);
-        /*if (tasks!=null ){ //m.alian_print
-           long millis = System.currentTimeMillis();
-           System.out.println("setup-cleanup task=" + millis);
-        }*/
+        if (tasks!=null ){ //m.alian_print
+           //long millis = System.currentTimeMillis();
+           //System.out.println("setup-cleanup task=" + millis);
+           //m.alian_ANN take cpt and mark checkpoint as ctrl
+           String command1 = "/sbin/m5 writefile /root/hadoop-1-0.2/ctrl_job";
+           String command2 = "/sbin/m5 checkpoint";
+
+           try {
+                Process p = Runtime.getRuntime().exec(command1);
+                p = Runtime.getRuntime().exec(command2);
+           } catch (Exception e) {
+                e.printStackTrace();
+           }
+
+        }
 
         if (tasks == null ) {
           tasks = taskScheduler.assignTasks(taskTrackers.get(trackerName));
@@ -3409,10 +3420,23 @@ public class JobTracker implements MRConstants, InterTrackerProtocol,
         if (tasks != null) {
           for (Task task : tasks) {
             expireLaunchingTasks.addNewTask(task.getTaskID());
-            /*if (tasks!=null){   //m.alian_print
-              long millis = System.currentTimeMillis(); //m.alian
-              System.out.println("submitted tasks=" + millis);
-            }*/
+            //m.alian_ANN take cpt and mark checkpoint as mapred
+            if (tasks!=null){   //m.alian_print
+              //long millis = System.currentTimeMillis(); //m.alian
+              //System.out.println("submitted tasks=" + millis);
+
+                String command1 = "/sbin/m5 writefile /root/hadoop-1-0.2/ctrl_job";
+                String command2 = "/sbin/m5 checkpoint";
+
+                try {
+                    Process p = Runtime.getRuntime().exec(command1);
+                    p = Runtime.getRuntime().exec(command2);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+
+            }
             if(LOG.isDebugEnabled()) {
               LOG.debug(trackerName + " -> LaunchTask: " + task.getTaskID());
             }
@@ -3603,7 +3627,7 @@ public class JobTracker implements MRConstants, InterTrackerProtocol,
                   " unassigned(r) = " + unassignedReduces + 
                   " commit_pending(r) = " + commitPendingReduces +
                   " misc(r) = " + miscReduces);
-        long millis = System.currentTimeMillis();
+        //long millis = System.currentTimeMillis(); //m.alian
         /*System.out.println("tt_statuse :"+ millis+" "+trackerName + ": Status -" +   //m.alian_print comment out the if condition to print this option on every heartbeat
                   " running(m) = " + runningMaps +
                   " unassigned(m) = " + unassignedMaps +
