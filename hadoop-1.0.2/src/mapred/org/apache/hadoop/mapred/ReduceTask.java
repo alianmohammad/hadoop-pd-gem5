@@ -347,7 +347,7 @@ class ReduceTask extends Task {
   @SuppressWarnings("unchecked")
   public void run(JobConf job, final TaskUmbilicalProtocol umbilical)
     throws IOException, InterruptedException, ClassNotFoundException {
-    long millis = System.currentTimeMillis(); //m.alian
+    //long millis = System.currentTimeMillis(); //m.alian
     //System.out.println("reduce task started=" + millis); //m.alian_print
     this.umbilical = umbilical;
     job.setBoolean("mapred.skip.on", isSkipping());
@@ -422,7 +422,7 @@ class ReduceTask extends Task {
       runOldReducer(job, umbilical, reporter, rIter, comparator, 
                     keyClass, valueClass);
     }
-    millis = System.currentTimeMillis(); //m.alian
+    //millis = System.currentTimeMillis(); //m.alian
     //System.out.println("reduce task done=" + millis); //m.alian_print
     done(umbilical, reporter);
   }
