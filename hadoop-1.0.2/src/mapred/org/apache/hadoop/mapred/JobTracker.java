@@ -3398,12 +3398,10 @@ public class JobTracker implements MRConstants, InterTrackerProtocol,
            //long millis = System.currentTimeMillis();
            //System.out.println("setup-cleanup task=" + millis);
            //m.alian_ANN take cpt and mark checkpoint as ctrl
-           String command1 = "/sbin/m5 writefile /root/hadoop-1-0.2/ctrl_job";
-           String command2 = "/sbin/m5 checkpoint";
+           String command = "/sbin/m5 checkpoint";
 
            try {
-                Process p = Runtime.getRuntime().exec(command1);
-                p = Runtime.getRuntime().exec(command2);
+                Process p = Runtime.getRuntime().exec(command);
            } catch (Exception e) {
                 e.printStackTrace();
            }
@@ -3425,12 +3423,10 @@ public class JobTracker implements MRConstants, InterTrackerProtocol,
               //long millis = System.currentTimeMillis(); //m.alian
               //System.out.println("submitted tasks=" + millis);
 
-                String command1 = "/sbin/m5 writefile /root/hadoop-1-0.2/ctrl_job";
-                String command2 = "/sbin/m5 checkpoint";
+                String command = "/sbin/m5 checkpoint";
 
                 try {
-                    Process p = Runtime.getRuntime().exec(command1);
-                    p = Runtime.getRuntime().exec(command2);
+                    Process p = Runtime.getRuntime().exec(command);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
